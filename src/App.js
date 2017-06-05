@@ -3,10 +3,10 @@ import logo from './logo.svg';
 import './App.css';
 import axios from 'axios';
 import DataList from './DataList';
-import { Col, Card, CardTitle} from 'react-materialize';
-import injectTapEventPlugin from 'react-tap-event-plugin';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
+import injectTapEventPlugin from 'react-tap-event-plugin';
 import MyAwesomeReactComponent from './MyAwesomeReactComponent';
+import WerryWashers from './components/WerryWashers';
 
 class App extends Component {
   constructor(props) {
@@ -48,21 +48,15 @@ class App extends Component {
     return (
       <MuiThemeProvider>
       <div>
+      <div>
         <h2>WashyWashy Frontend</h2>
-        <Col s={6} z-depth={4}>
-          <Card header={<CardTitle reveal image={require('./images/dryer.jpg')} waves='light'/>}
-              title={<h4>Dryer01</h4>}
-              reveal={<p className="text">Power consumption is currently at 1390kj <br/>
-              Size is Single, Number of cycles per day is 20</p>}>
-
-
-              <p><a href="#">Click here for perfomance analysis</a></p>
-
-          </Card>
-        </Col>
         <MyAwesomeReactComponent />
         <DataList Data={this.state.allData}
                   Cycles={this.state.cycles}/>
+      </div>
+      <div>
+        <WerryWashers/>
+      </div>
       </div>
       </MuiThemeProvider>
     );
