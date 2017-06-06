@@ -4,6 +4,7 @@ import PropTypes from 'prop-types';
 const DataList = (props) => {
   return (
     <div>
+      
        {props.Data.map((data,i) =>
         <p>{data.name} {data.cycles} {data.size}</p>
 
@@ -14,7 +15,7 @@ const DataList = (props) => {
 };
 
 DataList.propTypes = {
-  allData: PropTypes.array.isRequired
+  Data: PropTypes.array.isRequired
 };
 
 export default DataList;

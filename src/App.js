@@ -5,7 +5,7 @@ import axios from 'axios';
 import DataList from './DataList';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 import injectTapEventPlugin from 'react-tap-event-plugin';
-import MyAwesomeReactComponent from './MyAwesomeReactComponent';
+// import MyAwesomeReactComponent from './MyAwesomeReactComponent';
 import WerryWashers from './components/WerryWashers';
 
 class App extends Component {
@@ -50,7 +50,6 @@ class App extends Component {
       <div>
       <div>
         <h2>WashyWashy Frontend</h2>
-        <MyAwesomeReactComponent />
         <DataList Data={this.state.allData}
                   Cycles={this.state.cycles}/>
       </div>
