@@ -13,9 +13,6 @@ class App extends Component {
     super(props);
     this.state = {
       allData: [],
-      cycles: 0,
-      name: '',
-      size: ''
     }
   };
 
@@ -29,11 +26,9 @@ class App extends Component {
     axios.get(URL)
       .then((response) => {
         console.log(response.data);
-        console.log(response.data[0].cycles);
 
         this.setState({
         allData: response.data,
-        cycles: response.data[0].cycles
       });
       })
       .catch(function (error) {
