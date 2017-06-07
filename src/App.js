@@ -50,11 +50,9 @@ class App extends Component {
       <div>
       <div>
         <h2>WashyWashy Frontend</h2>
-        <DataList Data={this.state.allData}
-                  Cycles={this.state.cycles}/>
+        <DataList Data={this.state.allData}/>
       </div>
       <div>
-        <WerryWashers/>
       </div>
       </div>
       </MuiThemeProvider>
