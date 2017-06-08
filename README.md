@@ -82,7 +82,7 @@ Trello was used to build user stories and manage/schedule project tasks/agile de
 ![user-stories](http://res.cloudinary.com/savscloud/image/upload/v1496958022/Screen_Shot_2017-06-09_at_7.38.39_am_r92vvo.png)
 
 #### Wireframes/User Journery
-Used Sketch to combine wireframes and user journey/flow. Final product changed from concept depicted below, but a lot of elements remained true to concept.
+Used Sketch to combine wireframes and user journey/flow.
 ![wireframes](http://res.cloudinary.com/savscloud/image/upload/v1496958200/Screen_Shot_2017-06-09_at_7.42.24_am_x0ec2j.png)
 
 ## Development
