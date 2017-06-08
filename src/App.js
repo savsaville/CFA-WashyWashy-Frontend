@@ -2,11 +2,11 @@ import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
 import axios from 'axios';
-import DataList from './DataList';
+import DataList from './components/DataList';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 import injectTapEventPlugin from 'react-tap-event-plugin';
-// import MyAwesomeReactComponent from './MyAwesomeReactComponent';
 import WerryWashers from './components/WerryWashers';
+import Charts from './components/Charts';
 
 class App extends Component {
   constructor(props) {
@@ -44,7 +44,7 @@ class App extends Component {
       <MuiThemeProvider>
       <div>
       <div>
-        <h2>WashyWashy Frontend</h2>
+        <h2 className="App">WashyWashy Frontend</h2>
         <DataList Data={this.state.allData}/>
       </div>
       <div>
