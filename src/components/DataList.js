@@ -38,7 +38,7 @@ const DataList = (props) => {
                               <CollapsibleItem header='Money' icon='attach_money'>
                                 Money made by machine is: $39
                               </CollapsibleItem>
-                              <CollapsibleItem header='Size' icon='text_fields'><Modal
+                              <CollapsibleItem header='Analysis' icon='show_chart'><Modal
                                 trigger={<p>Click here to see past Analysis</p>}>
                                 <h5>Cycles of Machine per Day</h5>
                                   <LineChart width={600} height={200} data={graph} syncId="anyId"
@@ -63,7 +63,7 @@ const DataList = (props) => {
                                 </CollapsibleItem>
 
                             </Collapsible>}>
-                    <p><a href="#">Data valid for {data.createdAt} at {data.location} Laundromat</a></p>
+                    <p><a href="#">Data valid for today for {data.location} Laundromat</a></p>
                 </Card>
               </Col>
           )}
